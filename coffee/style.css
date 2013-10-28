@@ -409,8 +409,29 @@ table {
 *************************START MICHAEL FACCHINELLO STYLE**********************
 ******************************************************************************/
 
-#right column {float:left;width: 45%;
+
+
+#rightColumn {float:left;width: 45%; padding: 10px; text-align: center;
 }
 
-#left column {float:left;width:45%;
+#leftColumn {float:left;width:45%; padding: 10px; text-align: center;
 }
+
+.background {background: url(Medium_roasted_Arabica_coffee_beans.jpg) no-repeat fixed
+ center; width:100%; padding: 0; margin-top: 0px;}
+
+.topRect {background: rgba(35,11,3,1); width:100%; height:75px; padding: 0px; margin-top: 0px; margin-bottom: 0px;} /*menu background*/ 
+
+ul li {display:inline-block; color:white;  padding:10px;text-align: center; width: 90px;} /* floats menu nav*/
+
+ul {width: 480px; margin:auto;}
+
+body {background: #fff}
+
+footer {text-align: center; color: rgb(286, 157,153); background: rgba(35,11,3,1); width:100%; height: 150; clear:both;}
+
+h1 {color: rgb(286, 157,153); font-family: Geneva, Tahoma, Verdana, sans-serif; text-align: center;margin-bottom: 0px; margin-top: 0px; padding: 0px;}
+
+#dream {font-family: Papyrus, fantasy;}
+
+
