@@ -1,0 +1,90 @@
+html {
+  background-color: #ffffff;
+  background-image: url(../images/portfolio-background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+}
+#page-wrapper {
+  position: relative;
+  width: 980px;
+  /* centers the document */
+  margin: 0 auto;
+  /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+  overflow: hidden;
+  height: 3000px;
+}
+/* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+  margin-top: 0 !important;
+}
+#absolute-wrapper {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+  height: 1px;
+}
+#absolute-wrapper .rectangle {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border: none;
+  position: absolute;
+}
+#absolute-wrapper .rectangle.rectangle-1 {
+  width: 1114px;
+}
+#absolute-wrapper .rectangle.rectangle-2 {
+  left: 0px;
+}
+#absolute-wrapper .rectangle.rectangle-3 {
+  width: 490px;
+}
+#absolute-wrapper .rectangle.rectangle-4 {
+  background: rgba(3, 51, 102, 0.623529);
+  height: 1280px;
+  top: 0px;
+}
+#title {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.129412);
+  color: rgba(247, 246, 246, 0.980392);
+  text-align: center;
+  font-size: 100px;
+  font-weight: 200;
+  width: 980px;
+  height: 40px;
+  position: absolute;
+  top: 660px;
+  left: 0px;
+}
+#absolute-wrapper .rectangle.rectangle-2.rectangle-3 {
+  background: rgba(168, 9, 28, 0.580392);
+  height: 520px;
+  top: 1280px;
+}
+#absolute-wrapper .rectangle.rectangle-3.rectangle-5 {
+  background: rgba(223, 44, 13, 0.635294);
+  height: 410px;
+  top: 1980px;
+  left: 130px;
+}
+#absolute-wrapper .rectangle.rectangle-1.rectangle-6 {
+  background: rgba(0, 128, 128, 0.619608);
+  height: 80px;
+  top: 2920px;
+  left: -94px;
+}
