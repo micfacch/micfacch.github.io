@@ -14,11 +14,11 @@ $(function(){
        // x should be from where you want this to happen from top//
         //make CSS changes here  
          $('header').addClass('scrolled');
-         $('#logo').attr('src','MFloGoBlack.png');
+         $('#logo').attr('src','MFLoGoBlack.png');
       } 
       else{
         //back to default styles
         $('header').removeClass('scrolled');
-        $('#logo').attr('src','MFloGoWhite.png');
+        $('#logo').attr('src','MFLoGoWhite.png');
       }
     });
