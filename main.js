@@ -1,6 +1,6 @@
 $(function(){
     $(".next-chapter").bind("click", function (event) {
-        event.preventDefault ? event.preventDefault() : event.returnValue = false;
+        event.preventDefault ? event.preventDefault() : event.preventDefault = false;
         var target = $(this).attr("href");
         $("html, body").stop().animate({
                 scrollLeft: $(target).offset().left,
