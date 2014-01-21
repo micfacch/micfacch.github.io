@@ -1,0 +1,52 @@
+<div class='clearfix'>
+<div class='signup-form' data-bind-page="style: (bodyFont &amp;&amp; bodyFont() !== '') ? {fontFamily: bodyFont()  } : {fontFamily : 'inherit'}">
+<div class="email1 content"><form accept-charset="UTF-8" action="/site115352-7948-4552/collected_emails.jsm" class="new_collected_email" id="new_collected_email" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div><div class='inputs' data-bind="template: { name: 'emailFormTemplate', data: email1}"></div>
+<input data-bind="value:email1.recipient" id="collected_email_recipient" name="collected_email[recipient]" type="hidden" />
+<input data-bind="value:email1.hide_email" id="collected_email_skip_email" name="collected_email[skip_email]" type="hidden" value="true" />
+<input data-bind="value:email1.hide_name" id="collected_email_skip_name" name="collected_email[skip_name]" type="hidden" value="true" />
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<script id='emailFormTemplate' type='text/x-jquery-tmpl'>
+<div class='signup-form-container'>
+<div class='form' data-bind='visible: !isSuccess()'>
+<div class='sixteen columns'>
+<div class='fields-container'>
+<div class='left'>
+<div class='input' data-bind='visible: hasNameBox()'>
+<label class='outside' data-bind='text: name_label' for='collected_email[name]'>Name</label>
+<input name='collected_email[name]' type='text'>
+<div class='error' data-bind='visible: isNameEmpty()'>
+Please enter a name.
+</div>
+</div>
+<div class='input' data-bind='visible: hasEmailBox()'>
+<label class='outside' data-bind='text: email_label' for='collected_email[email]'>Email</label>
+<input name='collected_email[email]' type='text'>
+<div class='error' data-bind='visible: isEmailInvalid()'>
+Invalid email.
+</div>
+</div>
+<div class='input textarea' data-bind="visible: hasMessageBox(), css:{'ma-top10': hasEmailBox() || hasNameBox()}">
+<label class='outside' data-bind='text: message_label'>Message</label>
+<textarea name='collected_email[comment]'></textarea>
+</div>
+</div>
+<div class='right'>
+<div class='input submit'>
+<input class='submit-button' data-bind='mouseclick: submit, value: submit_label' type='button'>
+<div class='loading-icon' data-bind='visible: isLoading()'></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='hint s-form-submit-message thanks' data-bind='visible: isSuccess(), text: thanksMessage'>
+Thanks for your submission!
+</div>
+</div>
+</script>
